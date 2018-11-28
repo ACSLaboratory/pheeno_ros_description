@@ -583,7 +583,6 @@
     <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
       <rosDebugLevel>Debug</rosDebugLevel>
       <publishWheelTF>false</publishWheelTF>
-      <!-- <robotNamespace>/</robotNamespace> -->
       <publishTF>1</publishTF>
       <publishWheelJointState>false</publishWheelJointState>
       <alwaysOn>true</alwaysOn>
@@ -593,8 +592,8 @@
       <wheelSeparation>${motor_plank_length}</wheelSeparation>
       <wheelDiameter>${2*wheel_radius}</wheelDiameter>
       <broadcastTF>1</broadcastTF>
-      <wheelTorque>30</wheelTorque>
-      <wheelAcceleration>1.8</wheelAcceleration>
+      <wheelTorque>10</wheelTorque>
+      <wheelAcceleration>1.0</wheelAcceleration>
       <commandTopic>cmd_vel</commandTopic>
       <odometryFrame>odom</odometryFrame>
       <odometryTopic>odom</odometryTopic>
